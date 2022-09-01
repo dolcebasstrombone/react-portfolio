@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Work from "./components/Work/index.js";
@@ -6,13 +6,24 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [aboutSelected, setAboutSelected] = useState(true);
+  const [workSelected, setWorkSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <div>
-      <Header />
+      <Header
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
+        workSelected={workSelected}
+        setWorkSelected={setWorkSelected}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Header>
       <main>
-        <About />
-        <Work />
-        <Contact />
+        {aboutSelected && <About />}
+        {workSelected && <Work />}
+        {contactSelected && <Contact />}
       </main>
       <Footer />
     </div>

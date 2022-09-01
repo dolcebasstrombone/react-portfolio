@@ -20,6 +20,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* header styles start */
 header {
   padding: 10px;
   color: var(--mint);
@@ -43,7 +44,25 @@ nav ul {
   margin: 5px;
 }
 
-nav ul li {
+nav li {
   margin: 5px;
 }
 
+nav a {
+  color: var(--mint);
+  text-decoration: none;
+}
+/* header styles end */
+
+/* footer styles start */
+footer {
+  background-color: var(--maroon);
+  background-size: cover;
+  padding: 15px;
+}
+/* footer styles end */
+
+/* main styles start */
+/* main styles end */
+
+/* media queries start */
