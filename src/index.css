@@ -5,10 +5,10 @@
 }
 
 :root {
-  --dark-maroon: #37151E;
-  --maroon: #5C2331;
-  --powder: #F2F5F2;
-  --mint: #C1D7C8;
+  --dark-maroon: #37151e;
+  --maroon: #5c2331;
+  --powder: #f2f5f2;
+  --mint: #c1d7c8;
   --spruce: #092327;
 }
 
@@ -17,14 +17,20 @@ body {
   padding: 0;
   background-color: var(--powder);
   color: var(--spruce);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--spruce)
 }
 
 /* header styles start */
 header {
   padding: 10px;
-  color: var(--mint);
-  background-color: var(--maroon);
+  color: var(--spruce);
+  background-color: var(--mint);
   background-size: cover;
   position: -webkit-sticky;
   top: 0;
@@ -35,11 +41,35 @@ header {
   justify-content: center;
 }
 
+.hero {
+  padding: 5vw;
+  background-image: url("./assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.frosted {
+  width: 85vw;
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  padding: 5px;
+  color: var(--spruce);
+  font-weight: bold;
+  font-size: 30px;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   margin: 5px;
 }
@@ -49,20 +79,107 @@ nav li {
 }
 
 nav a {
-  color: var(--mint);
-  text-decoration: none;
+  color: var(--spruce);
+  font-weight: bold;
+  font-size: 2.974vw;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: var(--maroon);
+}
+
+.nav-focus {
+  color: var(--maroon);
 }
 /* header styles end */
 
 /* footer styles start */
 footer {
-  background-color: var(--maroon);
+  background-color: var(--mint);
   background-size: cover;
   padding: 15px;
 }
 /* footer styles end */
 
 /* main styles start */
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin: 10px;
+}
+
+main img {
+  margin: 20px;;
+  width: 70%;
+  border-radius: 7px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.about-container p {
+  margin: 10px;
+}
+
+.project-card {
+  padding: 10px;
+  margin: 20px 15px 20px 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.github-link p {
+  background-color: var(--maroon);
+  color: var(--mint);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+.github-link p:hover{
+  background-color: var(--spruce);
+}
+
+form {
+  background-color: var(--maroon);
+  width: 80%;
+  color: var(--mint);
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
 /* main styles end */
 
 /* media queries start */

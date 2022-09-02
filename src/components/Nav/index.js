@@ -9,11 +9,13 @@ function Nav(props) {
     contactSelected,
     setContactSelected,
   } = props;
+
   return (
     <nav>
       <ul>
-        <li className={`${aboutSelected && "nav-focus"}`}>
+        <li>
           <a
+            className={`${aboutSelected && "nav-focus"}`}
             href="#about"
             onClick={() => {
               setAboutSelected(true);
@@ -24,8 +26,9 @@ function Nav(props) {
             About Me
           </a>
         </li>
-        <li className={`${workSelected && "nav-focus"}`}>
+        <li>
           <a
+            className={`${workSelected && "nav-focus"}`}
             href="#work"
             onClick={() => {
               setAboutSelected(false);
@@ -36,8 +39,9 @@ function Nav(props) {
             My Work
           </a>
         </li>
-        <li className={`${contactSelected && "navfocus"}`}>
+        <li>
           <a
+            className={`${contactSelected && "navfocus"}`}
             href="#contact"
             onClick={() => {
               setAboutSelected(false);
@@ -49,7 +53,7 @@ function Nav(props) {
           </a>
         </li>
         <li>
-          <p>Resume</p>
+          <a href="/">Resume</a>
         </li>
       </ul>
     </nav>

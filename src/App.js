@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Work from "./components/Work/index.js";
@@ -9,6 +9,10 @@ function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
   const [workSelected, setWorkSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
+
+  useEffect(() => {
+    document.title = "My Portfolio";
+  });
 
   return (
     <div>

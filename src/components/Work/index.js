@@ -3,10 +3,10 @@ import Project from "../Project";
 
 function Work() {
   return (
-    <div>
-      <p>My Work</p>
+    <section>
+      <h2>My Work</h2>
       <Project />
-    </div>
+    </section>
   );
 }
 

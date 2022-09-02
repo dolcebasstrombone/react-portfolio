@@ -11,17 +11,19 @@ function Header(props) {
     setContactSelected,
   } = props;
   return (
-    <header>
-      <p>Header</p>
-      <Nav
-        aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        workSelected={workSelected}
-        setWorkSelected={setWorkSelected}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-    </header>
+      <header className="hero">
+        <div className="frosted">
+          <h1>Josie Franklin</h1>
+          <Nav
+            aboutSelected={aboutSelected}
+            setAboutSelected={setAboutSelected}
+            workSelected={workSelected}
+            setWorkSelected={setWorkSelected}
+            contactSelected={contactSelected}
+            setContactSelected={setContactSelected}
+          ></Nav>
+        </div>
+      </header>
   );
 }
 
