@@ -38,7 +38,7 @@ function Contact() {
 
   return (
     <section>
-      <h2>Contact Me</h2>
+      <h2 className="moon-flower">Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -72,7 +72,7 @@ function Contact() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <button className="moon-flower" type="submit">Submit</button>
       </form>
     </section>
   );

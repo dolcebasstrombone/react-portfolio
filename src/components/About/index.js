@@ -8,7 +8,7 @@ function About() {
         alt="Josie's professional headshot"
       ></img>
       <div className="about-container">
-        <h2>About Josie</h2>
+        <h2 className="moon-flower">About Josie</h2>
         <p>
           I am a student at UNC Chapel Hill with the goal to become a full-stack
           web developer. I graduated from Appalachian State University in 2019

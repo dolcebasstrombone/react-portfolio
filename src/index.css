@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "MoonFlower";
+  src: url("./fonts/Moon-Flower/MoonFlowerBold-MVppp.ttf");
+}
+
 :root {
   --dark-maroon: #37151e;
   --maroon: #5c2331;
@@ -26,6 +31,10 @@ a {
   color: var(--spruce)
 }
 
+.moon-flower {
+  font-family: "MoonFlower";
+}
+
 /* header styles start */
 header {
   padding: 10px;
@@ -43,7 +52,7 @@ header {
 
 .hero {
   padding: 5vw;
-  background-image: url("./assets/images/hero.jpg");
+  background-image: url("./assets/images/hero4.JPG");
   background-size: cover;
   background-position: center top;
 }
@@ -59,10 +68,11 @@ header {
 }
 
 h1 {
+  margin: 0 0 0 10px;
   padding: 5px;
   color: var(--spruce);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 9vw;
 }
 
 nav ul {
@@ -81,7 +91,7 @@ nav li {
 nav a {
   color: var(--spruce);
   font-weight: bold;
-  font-size: 2.974vw;
+  font-size: 5.7vw;
   padding: 5px;
   border-radius: 5px;
 }
@@ -113,6 +123,7 @@ main section {
 
 h2 {
   margin: 10px;
+  font-size: 7.5vw;
 }
 
 main img {
@@ -178,7 +189,28 @@ form {
 form div {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 10px;
+}
+
+label {
+  font-size: 17px;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--powder);
+  padding: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--mint);
+  color: var(--spruce);
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
 }
 /* main styles end */
 

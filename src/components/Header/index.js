@@ -13,7 +13,7 @@ function Header(props) {
   return (
       <header className="hero">
         <div className="frosted">
-          <h1>Josie Franklin</h1>
+          <h1 className="moon-flower">Josie Franklin</h1>
           <Nav
             aboutSelected={aboutSelected}
             setAboutSelected={setAboutSelected}
