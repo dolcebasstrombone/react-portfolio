@@ -1,4 +1,5 @@
 import React from "react";
+// import resume from "../../assets/resume.pdf"
 
 function Nav(props) {
   const {
@@ -36,7 +37,7 @@ function Nav(props) {
               setContactSelected(false);
             }}
           >
-            My Work
+            Portfolio
           </a>
         </li>
         <li>
@@ -53,7 +54,12 @@ function Nav(props) {
           </a>
         </li>
         <li>
-          <a className="moon-flower" href="/">Resume</a>
+          <a
+            className="moon-flower"
+            /* download="josie-franklin-resume" href={resume} */ href="/"
+          >
+            Resume
+          </a>
         </li>
       </ul>
     </nav>

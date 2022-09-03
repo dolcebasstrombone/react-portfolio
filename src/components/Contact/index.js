@@ -21,7 +21,7 @@ function Contact() {
       }
     } else {
       if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
+        setErrorMessage(`A ${e.target.name} is required.`);
       } else {
         setErrorMessage("");
       }
@@ -41,7 +41,7 @@ function Contact() {
       <h2 className="moon-flower">Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label className="moon-flower" htmlFor="name">Name:</label>
           <input
             type="text"
             defaultValue={name}
@@ -50,7 +50,7 @@ function Contact() {
           ></input>
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label className="moon-flower" htmlFor="email">Email address:</label>
           <input
             type="text"
             defaultValue={email}
@@ -59,7 +59,7 @@ function Contact() {
           ></input>
         </div>
         <div>
-          <label htmlFor="message">Message</label>
+          <label className="moon-flower" htmlFor="message">Message:</label>
           <textarea
             rows="5"
             defaultValue={message}

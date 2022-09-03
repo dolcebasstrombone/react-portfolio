@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { background } from "../../assets/images";
 
 function Project() {
   const [projects] = useState([
@@ -9,7 +8,7 @@ function Project() {
       description: "Sign up to search for jokes and save them for later.",
       link: "https://damp-bastion-89209.herokuapp.com/login",
       github: "https://github.com/dolcebasstrombone/jokr",
-      background: "bear.jpg",
+      background: "jokr.png",
     },
     {
       title: "Game Search",
@@ -17,7 +16,7 @@ function Project() {
       description: "Search for video games by category to find reviews.",
       link: "https://dolcebasstrombone.github.io/game-search/",
       github: "https://github.com/dolcebasstrombone/game-search",
-      background: "bear.jpg",
+      background: "game-search.png",
     },
     {
       title: "Weather Dashboard",
@@ -25,7 +24,7 @@ function Project() {
       description: "Check the weather by city.",
       link: "https://dolcebasstrombone.github.io/weather-dashboard/",
       github: "https://github.com/dolcebasstrombone/weather-dashboard",
-      background: "bear.jpg",
+      background: "weather-dashboard.png",
     },
     {
       title: "Coding Quiz",
@@ -33,7 +32,7 @@ function Project() {
       description: "Test your coding knowledge in this timed quiz!",
       link: "https://dolcebasstrombone.github.io/coding-quiz/",
       github: "https://github.com/dolcebasstrombone/coding-quiz",
-      background: "bear.jpg",
+      background: "coding-quiz.png",
     },
     {
       title: "E-Commerce Backend",
@@ -41,7 +40,7 @@ function Project() {
       description: "The back-end API for an e-commerce site.",
       link: "https://github.com/dolcebasstrombone/e-commerce-backend",
       github: "https://github.com/dolcebasstrombone/e-commerce-backend",
-      background: "bear.jpg",
+      background: "e-commerce.png",
     },
     {
       title: "Social Network API",
@@ -49,7 +48,7 @@ function Project() {
       description: "The back-end API for a social network app.",
       link: "https://github.com/dolcebasstrombone/social-network-api",
       github: "https://github.com/dolcebasstrombone/social-network-api",
-      background: "bear.jpg",
+      background: "social-media.png",
     },
   ]);
   return (
@@ -58,16 +57,22 @@ function Project() {
         <a href={project.link} target="blank">
           <div
             className="project-card"
-            style={{ backgroundImage: `url(${background})` }}
+            style={{
+              backgroundImage: `url(${require(`../../assets/images/${project.background}`)})`,
+            }}
           >
-            <div>
-              <h3>{project.title}</h3>
-              <h4>{project.tech}</h4>
-              <p>{project.description}</p>
+
+            <div className="project-content frosted">
+              <div className="project-text">
+                <h3 className="moon-flower">{project.title}</h3>
+                <h4 className="moon-flower">{project.tech}</h4>
+                <p>{project.description}</p>
+              </div>
+              <a className="github-link moon-flower" href={project.github} target="blank">
+                <p>GitHub Repo</p>
+              </a>
             </div>
-            <a className="github-link" href={project.github} target="blank">
-              <p>GitHub Repo</p>
-            </a>
+
           </div>
         </a>
       ))}

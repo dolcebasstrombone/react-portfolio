@@ -15,6 +15,7 @@
   --powder: #f2f5f2;
   --mint: #c1d7c8;
   --spruce: #092327;
+  --smoothen: 5px;
 }
 
 body {
@@ -26,13 +27,27 @@ body {
   line-height: 1.5;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
-  color: var(--spruce)
+  color: var(--spruce);
 }
 
 .moon-flower {
   font-family: "MoonFlower";
+}
+
+.frosted {
+  border-radius: var(--smoothen);
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* header styles start */
@@ -57,21 +72,15 @@ header {
   background-position: center top;
 }
 
-.frosted {
+.hero-content{
   width: 85vw;
   padding: 10px;
-  border-radius: 5px;
-  backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 h1 {
   margin: 0 0 0 10px;
   padding: 5px;
   color: var(--spruce);
-  font-weight: bold;
   font-size: 9vw;
 }
 
@@ -89,11 +98,8 @@ nav li {
 }
 
 nav a {
-  color: var(--spruce);
-  font-weight: bold;
-  font-size: 5.7vw;
+  font-size: 5.4vw;
   padding: 5px;
-  border-radius: 5px;
 }
 
 nav a:hover {
@@ -110,10 +116,25 @@ footer {
   background-color: var(--mint);
   background-size: cover;
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  color: var(--powder); 
+  filter: opacity(0.7) drop-shadow(0 0 0 var(--spruce));
 }
 /* footer styles end */
 
 /* main styles start */
+main {
+  flex: 1;
+}
+
 main section {
   display: flex;
   flex-direction: column;
@@ -127,9 +148,10 @@ h2 {
 }
 
 main img {
-  margin: 20px;;
+  margin: 20px;
+  margin-bottom: 0;
   width: 70%;
-  border-radius: 7px;
+  border-radius: var(--smoothen);
 }
 
 .about-container {
@@ -137,23 +159,41 @@ main img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
 }
 
 .about-container p {
-  margin: 10px;
+  margin: 25px;
+  margin-top: 0;
 }
 
+/* Background images are styled in the Project component. */
 .project-card {
   padding: 10px;
-  margin: 20px 15px 20px 15px;
+  margin: 15px;
+  margin-top: 0;
   background-size: cover;
-  background-position: center;
-  border-radius: 5px;
+  background-position: left top;
+  border-radius: var(--smoothen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-content {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  padding: 5px;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 20px;
 }
 
 .github-link {
@@ -164,17 +204,22 @@ main img {
 }
 
 .github-link p {
-  background-color: var(--maroon);
+  font-size: 18px;
   color: var(--mint);
-  border-radius: 5px;
+  background-color: var(--maroon);
+  border-radius: var(--smoothen);
+  box-shadow: 3px 3px var(--dark-maroon);
+  transform: translate(-1px, -1px);
   padding: 10px;
   margin: 5px;
   width: 70px;
   height: 70px;
 }
 
-.github-link p:hover{
+.github-link p:hover {
   background-color: var(--spruce);
+  box-shadow: 2px 2px black;
+  transform: translate(0, 0);
 }
 
 form {
@@ -183,7 +228,7 @@ form {
   color: var(--mint);
   margin: 0 0 20px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: var(--smoothen);
 }
 
 form div {
@@ -193,24 +238,33 @@ form div {
 }
 
 label {
-  font-size: 17px;
+  font-size: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
-  border-radius: 5px;
+  border-radius: var(--smoothen);
   background-color: var(--powder);
   padding: 5px;
 }
 
 button {
   border: none;
-  border-radius: 5px;
+  border-radius: var(--smoothen);
   background-color: var(--mint);
   color: var(--spruce);
+  box-shadow: 3px 3px var(--spruce);
+  transform: translate(-1px, -1px);
   padding: 5px;
   margin: 10px;
   font-size: 20px;
+}
+
+button:hover {
+  background-color: var(--powder);
+  /* box-shadow: 2px 2px var(--mint); */
+  transform: translate(0, 0);
 }
 /* main styles end */
 
