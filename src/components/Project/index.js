@@ -8,7 +8,7 @@ function Project() {
       description: "Sign up to search for jokes and save them for later.",
       link: "https://damp-bastion-89209.herokuapp.com/login",
       github: "https://github.com/dolcebasstrombone/jokr",
-      background: "jokr.png",
+      background: "jokr-green-contrast.jpg",
     },
     {
       title: "Game Search",
@@ -16,7 +16,7 @@ function Project() {
       description: "Search for video games by category to find reviews.",
       link: "https://dolcebasstrombone.github.io/game-search/",
       github: "https://github.com/dolcebasstrombone/game-search",
-      background: "game-search.png",
+      background: "game-search-green.jpg",
     },
     {
       title: "Weather Dashboard",
