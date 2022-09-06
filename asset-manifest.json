@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.de355016.css",
+    "main.js": "/react-portfolio/static/js/main.c4e7c720.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/josie-headshot.jpg": "/react-portfolio/static/media/josie-headshot.214db46b31b1a41c155a.jpg",
+    "static/media/screenshot-desktop.png": "/react-portfolio/static/media/screenshot-desktop.bdc388792f5f84382e0a.png",
+    "static/media/game-search.png": "/react-portfolio/static/media/game-search.fefee896b919018e0200.png",
+    "static/media/e-commerce.png": "/react-portfolio/static/media/e-commerce.4adaceb572693a447743.png",
+    "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.7fa155519691b5b513d0.png",
+    "static/media/screenshot-mobile.png": "/react-portfolio/static/media/screenshot-mobile.a74870af037f40e66041.png",
+    "static/media/social-media.png": "/react-portfolio/static/media/social-media.3d74b7ba71e22e769a5e.png",
+    "static/media/bear.jpg": "/react-portfolio/static/media/bear.dd098310fae3fecd2c18.jpg",
+    "static/media/resume2022.pdf": "/react-portfolio/static/media/resume2022.3ed587df65adfc26d25c.pdf",
+    "static/media/jokr.png": "/react-portfolio/static/media/jokr.7fe55c2a638b3e9045f9.png",
+    "static/media/coding-quiz.png": "/react-portfolio/static/media/coding-quiz.c8b90e6723927bef2918.png",
+    "static/media/MoonFlowerBold-MVppp.ttf": "/react-portfolio/static/media/MoonFlowerBold-MVppp.1ccea58ac002b9944067.ttf",
+    "static/media/MoonFlower-YzXXq.ttf": "/react-portfolio/static/media/MoonFlower-YzXXq.91e40a2c2f0e43147f4f.ttf",
+    "static/media/hero4.JPG": "/react-portfolio/static/media/hero4.a0a665af9a7bb94ea185.JPG",
+    "static/media/github.png": "/react-portfolio/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/stack-overflow.png": "/react-portfolio/static/media/stack-overflow.1fdaaa6247914e51d49b.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.de355016.css.map": "/react-portfolio/static/css/main.de355016.css.map",
+    "main.c4e7c720.js.map": "/react-portfolio/static/js/main.c4e7c720.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de355016.css",
+    "static/js/main.c4e7c720.js"
+  ]
+}
