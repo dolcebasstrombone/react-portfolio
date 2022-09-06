@@ -11,11 +11,11 @@ function About() {
       <div className="about-container">
         <h2 className="moon-flower">About Josie</h2>
         <p>
-          I am certified a full stack developer with a background in education.
-          I work with a variety of languages and frameworks including HTML, CSS,
+          I am certified a full stack developer with a background in education and management.
+          I work with a variety of technologies including HTML, CSS,
           JavaScript, MySql, and MongoDB to create and maintain full-stack web
-          applications. My time creating and dealing with art has given me
-          an eye for design, color, and composition. My previous job experience
+          applications. My time dealing with art has given me
+          an eye for design, color, and composition, and my previous job experience
           has proven my client-facing skills and abilities to handle fast-paced
           environents. I look forward to working with you!
         </p>

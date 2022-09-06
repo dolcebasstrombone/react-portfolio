@@ -1,9 +1,13 @@
 # react-portfolio
 
-```
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+## About
 
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+This application is a responsive porfolio site for my work. Technologies used include the React library for HTML, and CSS. I challenged myself to use pure CSS for this project without using a library or framework.
+
+## Application
+
+![Desktop Screenshot](./src/assets/images/screenshot-desktop.png) ![Mobile Screenshot](./src/assets/images/screenshot-mobile.png)
+
+## Links
+- [GitHub Repo](https://github.com/josie-franklin/react-portfolio)
+- [Live Page](https://josie-franklin.github.io/react-portfolio/)
