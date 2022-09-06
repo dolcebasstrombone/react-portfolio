@@ -13,7 +13,7 @@ function Contact() {
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-    //   console.log(isValid);
+      //   console.log(isValid);
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
@@ -41,7 +41,9 @@ function Contact() {
       <h2 className="moon-flower">Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label className="moon-flower" htmlFor="name">Name:</label>
+          <label className="moon-flower" htmlFor="name">
+            Name:
+          </label>
           <input
             type="text"
             defaultValue={name}
@@ -50,7 +52,9 @@ function Contact() {
           ></input>
         </div>
         <div>
-          <label className="moon-flower" htmlFor="email">Email address:</label>
+          <label className="moon-flower" htmlFor="email">
+            Email address:
+          </label>
           <input
             type="text"
             defaultValue={email}
@@ -59,7 +63,9 @@ function Contact() {
           ></input>
         </div>
         <div>
-          <label className="moon-flower" htmlFor="message">Message:</label>
+          <label className="moon-flower" htmlFor="message">
+            Message:
+          </label>
           <textarea
             rows="5"
             defaultValue={message}
@@ -72,7 +78,11 @@ function Contact() {
             <p>{errorMessage}</p>
           </div>
         )}
-        <button className="moon-flower" type="submit">Submit</button>
+        <div className="btn-container">
+          <button className="moon-flower" type="submit">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
   );

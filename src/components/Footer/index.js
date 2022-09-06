@@ -13,14 +13,14 @@ function Footer() {
           alt="LinkedIn icon"
         ></img>
       </a>
-      <a href="https://github.com/dolcebasstrombone" target="blank">
+      <a href="https://github.com/josie-franklin" target="blank">
         <img
           className="icon"
           src={require("../../assets/images/github.png")}
           alt="Github icon"
         ></img>
       </a>
-      <a href="https://stackoverflow.com/users/18532800/dolcebasstrombone" target="blank">
+      <a href="https://stackoverflow.com/users/19913846/josie-franklin" target="blank">
         <img
           className="icon"
           src={require("../../assets/images/stack-overflow.png")}

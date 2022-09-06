@@ -12,7 +12,7 @@ function Header(props) {
   } = props;
   return (
       <header className="hero">
-        <div className="hero-content frosted">
+        <div className="hero-content media-row frosted">
           <h1 className="moon-flower">Josie Franklin</h1>
           <Nav
             aboutSelected={aboutSelected}

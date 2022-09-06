@@ -11,7 +11,7 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
 
   useEffect(() => {
-    document.title = "My Portfolio";
+    document.title = "Josie Franklin";
   });
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-// import resume from "../../assets/resume.pdf"
+import resume from "../../assets/resume2022.pdf";
 
 function Nav(props) {
   const {
@@ -42,7 +42,7 @@ function Nav(props) {
         </li>
         <li>
           <a
-            className={`moon-flower ${contactSelected && "navfocus"}`}
+            className={`moon-flower ${contactSelected && "nav-focus"}`}
             href="#contact"
             onClick={() => {
               setAboutSelected(false);
@@ -56,9 +56,10 @@ function Nav(props) {
         <li>
           <a
             className="moon-flower"
-            /* download="josie-franklin-resume" href={resume} */ href="/"
+            download="josie-franklin-resume"
+            href={resume}
           >
-            Resume
+            Resumé
           </a>
         </li>
       </ul>
