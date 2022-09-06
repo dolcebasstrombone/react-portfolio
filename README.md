@@ -10,4 +10,4 @@ This application is a responsive porfolio site for my work. Technologies used in
 
 ## Links
 - [GitHub Repo](https://github.com/josie-franklin/react-portfolio)
-- [Live Page](https://josie-franklin.github.io/react-portfolio/)
+- [Live Page](http://josie-franklin.github.io/react-portfolio)
