@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.de355016.css",
-    "main.js": "/react-portfolio/static/js/main.c4e7c720.js",
+    "main.js": "/react-portfolio/static/js/main.73c8d4ab.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/josie-headshot.jpg": "/react-portfolio/static/media/josie-headshot.214db46b31b1a41c155a.jpg",
+    "static/media/site-seers.png": "/react-portfolio/static/media/site-seers.e1e1003bd4ed1bc1abc8.png",
     "static/media/screenshot-desktop.png": "/react-portfolio/static/media/screenshot-desktop.bdc388792f5f84382e0a.png",
     "static/media/game-search.png": "/react-portfolio/static/media/game-search.fefee896b919018e0200.png",
     "static/media/e-commerce.png": "/react-portfolio/static/media/e-commerce.4adaceb572693a447743.png",
@@ -21,11 +22,11 @@
     "static/media/stack-overflow.png": "/react-portfolio/static/media/stack-overflow.1fdaaa6247914e51d49b.png",
     "index.html": "/react-portfolio/index.html",
     "main.de355016.css.map": "/react-portfolio/static/css/main.de355016.css.map",
-    "main.c4e7c720.js.map": "/react-portfolio/static/js/main.c4e7c720.js.map",
+    "main.73c8d4ab.js.map": "/react-portfolio/static/js/main.73c8d4ab.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de355016.css",
-    "static/js/main.c4e7c720.js"
+    "static/js/main.73c8d4ab.js"
   ]
 }
