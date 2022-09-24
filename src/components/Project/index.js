@@ -11,12 +11,12 @@ function Project() {
       background: "jokr.png",
     },
     {
-      title: "Game Search",
-      tech: "Tailwind, Javascript, Giant Bomb API",
-      description: "Search for video games by category to find reviews.",
-      link: "https://josie-franklin.github.io/game-search/",
-      github: "https://github.com/josie-franklin/game-search",
-      background: "game-search.png",
+      title: "Site Seers",
+      tech: "MongoDB, Express.js, React, Node.js",
+      description: "Find campsites near you",
+      link: "https://site-seers.herokuapp.com/",
+      github: "https://github.com/jorge30fm/SiteSeers",
+      background: "site-seers.png",
     },
     {
       title: "Weather Dashboard",
